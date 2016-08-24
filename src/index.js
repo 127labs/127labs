@@ -1,5 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import 'babel-polyfill'
+import 'rxjs'
+import 'assets/styles/0-app.scss'
 
 const mountEl = document.getElementById('root')
 

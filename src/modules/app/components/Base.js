@@ -1,7 +1,11 @@
 import React from 'react'
-import { pure } from 'recompose'
 
-const Base = ({ children }) =>
-  <main>{children}</main>
+function Base ({ children }) {
+  return (
+    <main className='main'>
+      {children}
+    </main>
+  )
+}
 
-export default pure(Base)
+export default Base

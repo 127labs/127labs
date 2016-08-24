@@ -1,25 +1,14 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { compose, bindActionCreators } from 'redux'
-import { pure } from 'recompose'
-import * as actions from '../actions'
-import * as selectors from '../selectors'
+import Header from './Header'
 
-const Home = ({ isPinging, $actions }) =>
-  <div>
-    <h1>is pinging: {`${isPinging}`}</h1>
-    <button onClick={$actions.ping}>Start PING</button>
-  </div>
+function Home ({ isPinging, $actions }) {
+  return (
+    <section className='home'>
+      <Header bgImg='https://unsplash.it/1920/1080'>
+        <h1>Our Best Practices At Your Disposal</h1>
+      </Header>
+    </section>
+  )
+}
 
-const mapStateToProps = (state) => ({
-  isPinging: selectors.isPinging(state)
-})
-
-const mapDispatchToActions = (dispatch) => ({
-  $actions: bindActionCreators(actions, dispatch)
-})
-
-export default compose(
-  connect(mapStateToProps, mapDispatchToActions),
-  pure
-)(Home)
+export default Home

@@ -1,0 +1,39 @@
+// Elements
+// Styling for bare HTML elements (like H1, A, etc.).
+// These come with default styling from the browser so we can redefine them here.
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+}
+
+p, span {
+  font-size: 1.4rem;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+h1 {
+  $h1-size: 4.6rem;
+  font-size: $h1-size;
+  letter-spacing: $h1-size / 10;
+}
+
+h2 {
+  $h2-size: 3.6rem;
+  font-size: $h2-size;
+  letter-spacing: $h2-size / 10;
+}
+
+h3 {
+  $h3-size: 3.2rem;
+  font-size: $h3-size;
+  letter-spacing: $h3-size / 10;
+}

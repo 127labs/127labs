@@ -6,6 +6,13 @@ const config = require('hjs-webpack')({
     stats: {
       colors: true
     }
+  },
+  html (context) {
+    return {
+      'index.html': context.defaultTemplate({
+        head: '<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto:300,400" rel="stylesheet">'
+      })
+    }
   }
 })
 

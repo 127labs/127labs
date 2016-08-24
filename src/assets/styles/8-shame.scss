@@ -1,0 +1,19 @@
+// Shame
+// Shame! Shame! Shame! — Septa Unella, Game of Thrones
+
+.header {
+  height: 50vh;
+
+  &__hero {
+    height: inherit;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+  color: $white;
+}
