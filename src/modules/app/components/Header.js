@@ -6,78 +6,72 @@ class Header extends React.Component {
     layers: [
       {
         image: require('assets/images/parallax-header-layer-0.svg'),
+        xSensitivity: 0.25,
+        ySensitivity: 0.25,
         style: {
-          top: 0,
-          left: 0,
-          bottom: 0,
-          right: 0
-        },
-        step: 15
+          x: spring(0),
+          y: spring(0)
+        }
       },
       {
         image: require('assets/images/parallax-header-layer-1.svg'),
+        xSensitivity: 0.45,
+        ySensitivity: 0.25,
         style: {
-          top: 0,
-          left: 0,
-          bottom: 0,
-          right: 0
-        },
-        step: 10
+          x: spring(0),
+          y: spring(0)
+        }
       },
       {
         image: require('assets/images/parallax-header-layer-2.svg'),
+        xSensitivity: 0.65,
+        ySensitivity: 0.25,
         style: {
-          top: 0,
-          left: 0,
-          bottom: 0,
-          right: 0
-        },
-        step: 5
+          x: spring(0),
+          y: spring(0)
+        }
       }
     ]
   }
 
-  handleMouseMove (e) {
-    const sensitivity = 0.02
-    const x = sensitivity * e.pageX + (e.currentTarget.clientHeight * 0.1)
-    const y = sensitivity * e.pageY + (e.currentTarget.clientWidth * 0.05)
-
-    this.setState((state, props) => {
-      return {
-        layers: state.layers.map((layer) => ({
-          ...layer,
-          style: {
-            top: y,
-            left: x
-          }
-        }))
-      }
-    })
+  componentDidMount () {
+    window.addEventListener('mousemove', (e) => this.handleMouseMove(e))
   }
 
-  getStyle (index) {
-    return Object.keys(this.state.layers[index].style).reduce((acc, key) => {
-      acc[key] = spring(this.state.layers[index].style[key], [150, 15])
-      return acc
-    }, {})
+  handleMouseMove ({ x, y }) {
+    x -= window.innerWidth / 2
+    y -= window.innerHeight / 2
+
+    this.setState((state, props) => ({
+      layers: state.layers.map((layer) => ({
+        ...layer,
+        style: {
+          x: spring(x * layer.xSensitivity),
+          y: spring(y * layer.ySensitivity)
+        }
+      }))
+    }))
   }
 
   render () {
     return (
-      <header className='header' onMouseMove={(e) => this.handleMouseMove(e)}>
+      <header className='header'>
         {
           this.state.layers.map((layer, index) =>
             <Motion
               key={index}
-              defaultStyle={layer.style}
-              style={this.getStyle(index)}
+              style={layer.style}
             >
               {
-                (interpolatedStyle) =>
-                  <img
-                    src={layer.image}
+                ({ x, y }) =>
+                  <div
                     className='header__parallax-layer'
-                    style={interpolatedStyle}
+                    style={{
+                      backgroundImage: `url(${layer.image})`,
+                      transform: `translate3d(${x}px, ${y}px, 0px)`,
+                      transformStyle: 'preserve-3d',
+                      backfaceVisibility: 'hidden'
+                    }}
                   />
               }
             </Motion>
