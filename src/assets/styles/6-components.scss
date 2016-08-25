@@ -20,20 +20,7 @@
   &__parallax-layer {
     position: absolute;
     z-index: 0;
-
-    &--0 {
-      top: -20%;
-      left: 42%
-    }
-
-    &--1 {
-      left: 22%;
-      top: -19%;
-    }
-
-    &--3 {
-      top: -10%;
-    }
+    margin: auto;
   }
 
   &__hero {
