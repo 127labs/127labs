@@ -2,18 +2,77 @@
 // Shame! Shame! Shame! — Septa Unella, Game of Thrones
 
 .header {
-  height: 50vh;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-image: linear-gradient(90deg, #472B9B 0%, #24164F 100%);
+
+  &__logo {
+    max-width: 26rem;
+  }
 
   &__hero {
     height: inherit;
+    text-align: center;
+    color: $white;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+
+  &__caret-down {
+    margin-bottom: 4rem;
+  }
+
+  &__slant-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50vw;
+    height: 0;
+    border-left: 50vw solid #fff;
+    border-top: 7rem solid transparent;
+    z-index: 2;
+  }
+
+  &__slant-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 0;
+    border-right: 50vw solid #fff;
+    border-top: 7rem solid transparent;
+    z-index: 2;
+  }
+}
+
+.section {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    width: 75rem;
+  }
+
+  @media (min-width: 992px) {
+    width: 97rem;
+  }
+
+  @media (min-width: 1200px) {
+    width: 117rem;
   }
 }
 
 .hero {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   text-transform: uppercase;
-  color: $white;
 }

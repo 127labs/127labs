@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="21px" viewBox="0 0 34 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Caret Down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.75">
+        <g id="Desktop-HD" transform="translate(-703.000000, -813.000000)" fill="#FFFFFF">
+            <g id="HEADER_SECTION" transform="translate(0.026861, 0.000000)">
+                <path d="M729.55954,814.433387 L721.509904,822.471339 C720.473901,823.505838 718.799955,823.505838 717.763952,822.471339 L709.714316,814.433387 C708.173056,812.894364 705.649767,812.947511 704.161732,814.565881 C702.753908,816.077956 702.912831,818.492036 704.37463,819.950964 L716.940847,832.498942 C717.68524,833.241506 718.668018,833.613536 719.650797,833.613536 C720.633575,833.613536 721.617103,833.242254 722.360746,832.498942 L734.926964,819.924765 C736.414999,818.465837 736.547686,816.077956 735.139861,814.538933 C733.651076,812.920563 731.127038,812.868165 729.55954,814.433387 L729.55954,814.433387 Z" id="Caret-Down"></path>
+            </g>
+        </g>
+    </g>
+</svg>
