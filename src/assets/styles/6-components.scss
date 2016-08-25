@@ -19,6 +19,7 @@
 
   &__parallax-layer {
     position: absolute;
+    z-index: 0;
 
     &--0 {
       top: -20%;
@@ -41,10 +42,12 @@
     color: $white;
     margin-bottom: auto;
     margin-top: auto;
+    z-index: 1;
   }
 
   &__caret-down {
     margin-bottom: 4rem;
+    z-index: 1;
   }
 
   &__slant-left {
