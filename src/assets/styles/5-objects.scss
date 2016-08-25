@@ -78,17 +78,23 @@
   margin-top: 12rem;
   margin-bottom: 12rem;
   position: relative;
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .build-with-us-section {
   background-color: $purple-darkest;
   color: $white;
   position: relative;
-  padding-top: 10rem;
+  padding-top: 13rem;
+  padding-bottom: 13rem;
 
   &__iphone {
-    max-height: 468px;
-    width: auto;
+    max-width: 100%;
+    height: auto;
   }
 }
 

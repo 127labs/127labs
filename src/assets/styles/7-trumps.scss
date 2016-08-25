@@ -2,6 +2,16 @@
 // Utilities and helper classes with ability to override anything
 // which goes before in the triangle, eg. hide helper class
 
-.text-alt {
+.text--alt {
   color: $turqoise-light;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.hidden--sm {
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
 }

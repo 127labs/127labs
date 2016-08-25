@@ -117,8 +117,40 @@
     border-left: 50vw solid #fff;
     border-bottom: 7rem solid transparent;
   }
+}
 
-  &--purple-darkest {
-    // border-color: $purple-darkest;
+.btn {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  white-space: nowrap;
+
+  &:hover, & {
+    text-decoration: none;
+  }
+
+  &--outline-light {
+    color: $white;
+    border: 0.2rem solid $white;
+
+    &:hover {
+      background-color: $white;
+      color: $turqoise-darker;
+      border-color: transparent;
+    }
+  }
+
+  &--primary {
+    background-color: $turqoise-light;
+    color: $turqoise-darker;
+    border: 0.2rem solid $turqoise-light;
+
+    &:hover {
+      border: 0.2rem solid darken($turqoise-light, 15%);
+      background-color: darken($turqoise-light, 15%);
+    }
   }
 }

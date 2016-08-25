@@ -24,7 +24,9 @@ function Home () {
         <img src={require('assets/images/always-test.svg')} alt='Always Be Testing' className='marketing-section__image' />
       </section>
       <section className='section marketing-section flex flex--col-2'>
-        <img src={require('assets/images/trinity.svg')} alt='Always Be Testing' className='marketing-section__image' />
+        <div>
+          <img src={require('assets/images/trinity.png')} alt='Always Be Testing' className='marketing-section__image' />
+        </div>
         <div className='blurb'>
           <h3 className='blurb__title'>
             RED. GREEN. REFACTOR
@@ -41,18 +43,26 @@ function Home () {
         </div>
       </section>
       <section className='build-with-us-section'>
-        <div className='slant slant--top-left slant--purple-darkest' />
-        <div className='slant slant--top-right slant--purple-darkest' />
-        <div className='section flex flex--col-2'>
-          <img src={require('assets/images/iphone.png')} alt='Always Be Testing' className='build-with-us-section__iphone' />
+        <div className='slant slant--top-left' />
+        <div className='slant slant--top-right' />
+        <div className='section flex flex--col-2 flex--jc-center flex--ai-center'>
           <div>
-            <h3 className='text-alt'>BUILD WITH US</h3>
+            <img src={require('assets/images/iphone.png')} alt='Always Be Testing' className='build-with-us-section__iphone hidden--sm' />
+          </div>
+          <div>
+            <h3 className='text--alt'>BUILD WITH US</h3>
             <p>With the internet becoming the commonplace these days you can't help but to move your business online.</p>
             <p>May it be your internal operations or your product, this is where we come in.</p>
             <p>We visualise your ideas and realise it for you end to end.</p>
             <p>We are here to build battle tested, fault-tolerant and beautiful softwares</p>
+            <div style={{marginTop: '4rem'}}>
+              <a href='#' className='btn btn--outline-light text--uppercase' style={{marginRight: '1rem'}}>Contact Us</a>
+              <a href='#' className='btn btn--primary text--uppercase'>Development Process</a>
+            </div>
           </div>
         </div>
+        <div className='slant slant--bottom-left' />
+        <div className='slant slant--bottom-right' />
       </section>
     </div>
   )
