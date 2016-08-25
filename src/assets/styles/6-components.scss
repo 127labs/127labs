@@ -10,10 +10,29 @@
   flex-direction: column;
   position: relative;
   background-image: linear-gradient(90deg, #472B9B 0%, #24164F 100%);
+  overflow: hidden;
 
   &__logo {
     width: 24rem;
     margin-bottom: 1rem;
+  }
+
+  &__parallax-layer {
+    position: absolute;
+
+    &--0 {
+      top: -20%;
+      left: 42%
+    }
+
+    &--1 {
+      left: 22%;
+      top: -19%;
+    }
+
+    &--3 {
+      top: -10%;
+    }
   }
 
   &__hero {
