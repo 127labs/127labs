@@ -37,62 +37,22 @@ class Header extends React.Component {
     ]
   }
 
-  handleMouseMove ({ currentTarget: target, pageY: y, pageX: x }) {
-    const width = target.clientWidth / 2
-    const height = target.clientHeight / 2
+  handleMouseMove (e) {
+    const sensitivity = 0.02
+    const x = sensitivity * e.pageX + (e.currentTarget.clientHeight * 0.1)
+    const y = sensitivity * e.pageY + (e.currentTarget.clientWidth * 0.05)
 
     this.setState((state, props) => {
       return {
         layers: state.layers.map((layer) => ({
           ...layer,
-          style: this.layerStyleReducer({
-            layer,
-            height,
-            width,
-            x,
-            y
-          })
+          style: {
+            top: y,
+            left: x
+          }
         }))
       }
     })
-  }
-
-  layerStyleReducer ({ layer, width, height, x, y }) {
-    return Object.keys(layer.style).reduce((acc, key) => {
-      switch (key) {
-        case 'top':
-          if (y < height) {
-            acc.top = layer.step
-          } else {
-            acc.top = 0
-          }
-          return acc
-
-        case 'bottom':
-          if (y > height) {
-            acc.bottom = layer.step
-          } else {
-            acc.bottom = 0
-          }
-          return acc
-
-        case 'left':
-          if (x < width) {
-            acc.left = layer.step
-          } else {
-            acc.left = 0
-          }
-          return acc
-
-        case 'right':
-          if (x > width) {
-            acc.right = layer.step
-          } else {
-            acc.right = 0
-          }
-          return acc
-      }
-    }, {...layer.style})
   }
 
   getStyle (index) {
