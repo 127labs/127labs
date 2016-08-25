@@ -3,7 +3,7 @@
 // and our UI components are often composed of Objects and Components
 
 .header {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
     top: 0;
     display: block;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 
   &__hero {
