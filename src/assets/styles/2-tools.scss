@@ -1,3 +1,38 @@
 // Tools
 // Globally used mixins and functions.
 // It’s important not to output any CSS in the first 2 layers.
+
+@mixin flex-columns($column, $padding) {
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  > * {
+    width: calc((100% - #{((2 * $column) - 2) * $padding}rem) / #{$column});
+
+    &:not(:nth-child(#{$column}n)) {
+      margin-right: #{$padding}rem;
+    }
+
+    &:not(:nth-child(#{$column}n+1)) {
+      margin-left: #{$padding}rem;
+    }
+
+    &:not(:nth-child(-n+#{$column})):not(:nth-last-child(-n+#{$column})) {
+      margin-top: #{$padding}rem;
+      margin-bottom: #{$padding}rem;
+    }
+
+    &:nth-last-child(-n+#{$column}) {
+      margin-top: #{$padding}rem;
+    }
+
+    &:nth-child(-n+#{$column}) {
+      margin-bottom: #{$padding}rem;
+    }
+
+    &:nth-child(-n+#{$column}):nth-last-child(-n+#{$column}) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

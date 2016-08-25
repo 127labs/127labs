@@ -6,6 +6,11 @@ html {
   font-family: $font-family-base;
   line-height: $line-height-base;
   font-size: $font-size-base;
+  color: $text-color;
+
+  @media (max-width: $screen-md) {
+    font-size: $font-size-md;
+  }
 
   @media (max-width: $screen-sm) {
     font-size: $font-size-sm;
@@ -21,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, span {
   font-size: $font-size-normal;
+  font-weight: lighter;
 }
 
 code, kbd, pre {

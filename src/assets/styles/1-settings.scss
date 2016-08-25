@@ -19,6 +19,11 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+$purple-light: #643DDB;
+$purple-dark: #2A1A5C;
+$purple-darker: #24164F;
+$purple-darkest: #180F35;
+$turqoise-light: #83E5E5;
 
 //== Scaffolding
 //
@@ -27,7 +32,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $purple-dark !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -48,17 +53,18 @@ $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !def
 $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          10px !default;
-$font-size-sm:            $font-size-base / 1.6 !default;
-$font-size-normal:        1.4rem !default; // ~14px
-$font-size-large:         1.8rem !default; // ~18px
-$font-size-small:         1.2rem !default; // ~12px
+$font-size-sm:            $font-size-base / 1.4 !default;
+$font-size-md:            $font-size-base / 1.2 !default;
+$font-size-normal:        2.4rem !default; // ~14px
+$font-size-large:         2.8rem !default; // ~18px
+$font-size-small:         2.2rem !default; // ~12px
 
 $font-size-h1:            3.6rem !default; // ~36px
-$font-size-h2:            3.0rem !default; // ~30px
-$font-size-h3:            2.4rem !default; // ~24px
-$font-size-h4:            1.8rem !default; // ~18px
-$font-size-h5:            $font-size-base !default;
-$font-size-h6:            1.2rem !default; // ~12px
+$font-size-h2:            3.4rem !default; // ~30px
+$font-size-h3:            3.2rem !default; // ~24px
+$font-size-h4:            2.4rem !default; // ~18px
+$font-size-h5:            2.2rem !default;
+$font-size-h6:            2.0rem !default; // ~12px
 
 $letter-spacing-h1: $font-size-h1 / 10;
 $letter-spacing-h2: $font-size-h2 / 10;
