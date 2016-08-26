@@ -1,12 +1,25 @@
 import React from 'react'
+import ReactGA from 'react-ga'
 import { browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 import configureStore from 'config/configure-store'
 
-export default (ComponentToInitialize) =>
+export default (Component) =>
   function initialize () {
     const store = configureStore({})
     const history = syncHistoryWithStore(browserHistory, store)
+    ReactGA.initialize('UA-56128900-3')
 
-    return <ComponentToInitialize store={store} history={history} />
+    return (
+      <Component
+        store={store}
+        history={history}
+        sendToAnalytics={() => {
+          if (process.env.NODE_ENV === 'production') {
+            ReactGA.set({page: window.location.pathname})
+            ReactGA.pageview(window.location.pathname)
+          }
+        }}
+      />
+    )
   }
