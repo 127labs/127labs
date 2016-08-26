@@ -56,6 +56,10 @@ class Header extends React.Component {
     window.addEventListener('mousemove', (e) => this.handleMouseMove(e))
   }
 
+  componentWillUnmount () {
+    window.removeEventListener('mousemove', (e) => this.handleMouseMove(e))
+  }
+
   handleMouseMove ({ x, y }) {
     x -= window.innerWidth / 2
     y -= window.innerHeight / 2
