@@ -7,7 +7,7 @@
   "scripts": {
     "start": "hjs-dev-server",
     "build": "webpack",
-    "deploy": "npm run build && surge -p dist -d 127labs.surge.sh",
+    "deploy": "npm run build && surge -p dist -d 127labs.com",
     "test": "npm run lint && karma start",
     "lint": "standard",
     "lint:fix": "standard --fix"
