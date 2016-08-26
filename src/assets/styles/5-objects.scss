@@ -121,6 +121,10 @@
     max-width: 100%;
     height: auto;
   }
+
+  @media (min-width: $screen-sm) {
+    padding-top: 12rem;
+  }
 }
 
 
