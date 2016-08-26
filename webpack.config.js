@@ -1,7 +1,7 @@
 const config = require('hjs-webpack')({
   in: 'src/index.js',
   out: 'dist',
-  clearBeforeBuild: true,
+  clearBeforeBuild: '!assets',
   devServer: {
     stats: {
       colors: true
@@ -10,7 +10,24 @@ const config = require('hjs-webpack')({
   html (context) {
     return {
       'index.html': context.defaultTemplate({
-        head: '<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto:300,400" rel="stylesheet">'
+        head: `<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+               <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+               <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
+               <link rel="manifest" href="/assets/manifest.json">
+               <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+               <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto:300,400" rel="stylesheet">
+               <meta name="theme-color" content="#ffffff">
+              `,
+        title: 'Malaysia-based Full-Stack Software Development and UI UX Design Consultancy',
+        metaTags: {
+          'og:title': 'Malaysia-based Full-Stack Software Development and UI UX Design Consultancy',
+          'og:description': 'Build your app while you hire your dream team. We excel in augmenting staff, delivering elegant code, and seamlessly handing off to you for rapid iteration.',
+          'og:image': '/assets/logo.png',
+          'og:url': 'https://127labs.com',
+          'og:site_name': '127 Labs, LLP',
+          'twitter:card': '/assets/logo.png',
+          'twitter:site': '@127labs'
+        }
       })
     }
   }

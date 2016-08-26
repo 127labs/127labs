@@ -13,6 +13,7 @@ node_modules
 
 #public folder
 dist
+!dist/favicons
 
 # Mac files
 .DS_Store
