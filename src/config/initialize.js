@@ -8,7 +8,7 @@ export default (Component) =>
   function initialize () {
     const store = configureStore({})
     const history = syncHistoryWithStore(browserHistory, store)
-    ReactGA.initialize('UA-56128900-3', {debug: process.env.NODE_ENV === 'development'})
+    ReactGA.initialize('UA-56128900-3', { debug: process.env.NODE_ENV !== 'production' })
 
     return (
       <Component
