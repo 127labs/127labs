@@ -20,7 +20,7 @@ const config = require('hjs-webpack')({
               `,
         title: 'Malaysia-based Full-Stack Software Development and UI UX Design Consultancy',
         metaTags: {
-          'og:title': 'Malaysia-based Full-Stack Software Development and UI UX Design Consultancy',
+          'og:title': 'Malaysia-based Full-Stack Elixir Software Development and UI UX Design Consultancy',
           'og:description': 'Build your app while you hire your dream team. We excel in augmenting staff, delivering elegant code, and seamlessly handing off to you for rapid iteration.',
           'og:image': '/assets/logo.png',
           'og:url': 'https://127labs.com',
