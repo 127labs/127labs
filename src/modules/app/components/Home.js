@@ -25,7 +25,7 @@ function Home () {
           <h3>EMPOWER</h3>
         </figure>
       </section>
-      <section className='section marketing-section marketing-section--flipped-xs flex flex--col-2'>
+      <section className='section marketing-section marketing-section--flipped-sm flex flex--col-2'>
         <div className='marketing-section__blurb blurb'>
           <h3 className='blurb__title'>
             ALWAYS BE TESTING

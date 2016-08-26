@@ -88,8 +88,8 @@
   margin-bottom: 10rem;
   position: relative;
 
-  &--flipped-xs {
-    @media (max-width: $screen-xs) {
+  &--flipped-sm {
+    @media (max-width: $screen-sm) {
       flex-direction: column-reverse;
 
       > * {
