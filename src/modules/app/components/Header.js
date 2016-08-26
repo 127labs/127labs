@@ -5,7 +5,7 @@ class Header extends React.Component {
   state = {
     layers: [
       {
-        image: require('assets/images/alt/parallax-header-0.svg'),
+        image: require('assets/images/parallax-header-0.svg'),
         xSensitivity: -0.1,
         ySensitivity: -0.1,
         style: {
@@ -14,7 +14,7 @@ class Header extends React.Component {
         }
       },
       {
-        image: require('assets/images/alt/parallax-header-1.svg'),
+        image: require('assets/images/parallax-header-1.svg'),
         xSensitivity: -0.085,
         ySensitivity: -0.085,
         style: {
@@ -23,7 +23,7 @@ class Header extends React.Component {
         }
       },
       {
-        image: require('assets/images/alt/parallax-header-2.svg'),
+        image: require('assets/images/parallax-header-2.svg'),
         xSensitivity: -0.045,
         ySensitivity: -0.045,
         style: {
@@ -32,7 +32,7 @@ class Header extends React.Component {
         }
       },
       {
-        image: require('assets/images/alt/parallax-header-3.svg'),
+        image: require('assets/images/parallax-header-3.svg'),
         xSensitivity: -0.065,
         ySensitivity: -0.065,
         style: {
@@ -41,7 +41,7 @@ class Header extends React.Component {
         }
       },
       {
-        image: require('assets/images/alt/parallax-header-4.svg'),
+        image: require('assets/images/parallax-header-4.svg'),
         xSensitivity: -0.025,
         ySensitivity: -0.025,
         style: {
