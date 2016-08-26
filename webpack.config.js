@@ -21,7 +21,7 @@ const config = require('hjs-webpack')({
         title: 'KL-based Full-Stack Software Development and UI UX Design Consultancy',
         metaTags: {
           'og:title': 'KL-based Full-Stack Elixir Software Development and UI UX Design Consultancy',
-          'og:description': 'Build your app while you hire your dream team. We excel in augmenting staff, delivering elegant code, and seamlessly handing off to you for rapid iteration.',
+          'og:description': 'Build your app while you hire your dream team. We excel in augmenting/training staff, delivering elegant code, and seamlessly handing off to you for rapid iteration.',
           'og:image': '/assets/logo.png',
           'og:url': 'https://127labs.com',
           'og:site_name': '127 Labs, LLP',
