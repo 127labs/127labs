@@ -15,10 +15,8 @@ export default (Component) =>
         store={store}
         history={history}
         sendToAnalytics={() => {
-          if (process.env.NODE_ENV === 'production') {
-            ReactGA.set({page: window.location.pathname})
-            ReactGA.pageview(window.location.pathname)
-          }
+          ReactGA.set({page: window.location.pathname})
+          ReactGA.pageview(window.location.pathname)
         }}
       />
     )
