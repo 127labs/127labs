@@ -9,7 +9,7 @@ export default (Component) =>
     const history = syncHistoryWithStore(browserHistory, store)
     window.ga('create', 'UA-56128900-3', 'auto')
 
-    history.listen(function (location) {
+    history.listen((location) => {
       const page = `${location.pathname}${location.search}`
 
       window.ga('set', 'page', page)
