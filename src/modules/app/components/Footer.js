@@ -54,10 +54,12 @@ class Header extends React.Component {
 
   componentDidMount () {
     window.addEventListener('mousemove', (e) => this.handleMouseMove(e))
+    window.addEventListener('touchmove', (e) => this.handleTouchMove(e))
   }
 
   componentWillUnmount () {
     window.removeEventListener('mousemove', (e) => this.handleMouseMove(e))
+    window.removeEventListener('touchmove', (e) => this.handleTouchMove(e))
   }
 
   handleMouseMove ({ x, y }) {
@@ -73,6 +75,10 @@ class Header extends React.Component {
         }
       }))
     }))
+  }
+
+  handleTouchMove ({ touches }) {
+    this.handleMouseMove({ x: touches[0].pageX, y: touches[0].pageY })
   }
 
   render () {

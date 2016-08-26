@@ -3,6 +3,7 @@ const config = require('hjs-webpack')({
   out: 'dist',
   clearBeforeBuild: '!assets',
   devServer: {
+    hostname: '0.0.0.0',
     stats: {
       colors: true
     }
