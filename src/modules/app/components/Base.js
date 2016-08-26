@@ -10,7 +10,7 @@ function Base ({ children }) {
       </Header>
       {children}
       <Footer>
-        <a href='#' className='btn btn--outline-light text--uppercase'>Send Us An Inquiry</a>
+        <a href='mailto:team@127labs.com?Subject=Hello,%20127%20Labs' target='_top' className='btn btn--outline-light text--uppercase'>Send Us An Inquiry</a>
       </Footer>
     </main>
   )

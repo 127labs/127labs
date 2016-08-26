@@ -67,8 +67,8 @@ function Home () {
             <p>We visualise your ideas and realise it for you end to end.</p>
             <p>We are here to build battle tested, fault-tolerant and beautiful softwares</p>
             <div style={{marginTop: '4rem'}}>
-              <a href='#' className='btn btn--outline-light text--uppercase' style={{marginRight: '1rem'}}>Contact Us</a>
-              <a href='#' className='btn btn--primary text--uppercase'>Development Process</a>
+              <a href='mailto:team@127labs.com?Subject=Hello,%20127%20Labs' target='_top' className='btn btn--outline-light text--uppercase' style={{marginRight: '1rem'}}>Contact Us</a>
+              { /* <a href='#' className='btn btn--primary text--uppercase'>Development Process</a> */ }
             </div>
           </div>
         </div>
