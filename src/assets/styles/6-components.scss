@@ -93,7 +93,7 @@
     left: 0;
     bottom: 0;
     border-left: 49.5vw solid $white;
-    border-top: 7rem solid transparent;
+    border-top: 6rem solid transparent;
     width: 49.5vw;
   }
 
@@ -101,17 +101,17 @@
     right: 0;
     bottom: 0;
     border-right: 49.5vw solid $white;
-    border-top: 7rem solid transparent;
+    border-top: 6rem solid transparent;
     width: 49.5vw;
   }
 
   &--full {
-    bottom: -7rem;
+    bottom: -6rem;
     left: 0;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 7rem 50vw 0 50vw;
+    border-width: 6rem 49.5vw 0 49.5vw;
     border-color: $white transparent transparent transparent;
   }
 
@@ -121,7 +121,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 7rem 50vw 0 50vw;
+    border-width: 6rem 49.5vw 0 49.5vw;
     border-color: $white transparent transparent transparent;
   }
 
@@ -168,4 +168,12 @@
       background-color: darken($turqoise-light, 15%);
     }
   }
+}
+
+.footer {
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  background-image: linear-gradient(89deg, #472B9B 0%, #24164F 100%);
+  position: relative;
+  overflow: hidden;
 }

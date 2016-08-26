@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './Header'
+import Footer from './Footer'
 
 function Home () {
   return (
@@ -78,6 +79,9 @@ function Home () {
         </div>
         <div className='slant slant--full slant--full-dark' />
       </section>
+      <Footer>
+        <a href='#' className='btn btn--outline-light text--uppercase'>Send Us An Inquiry</a>
+      </Footer>
     </div>
   )
 }
