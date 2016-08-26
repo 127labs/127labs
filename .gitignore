@@ -12,8 +12,8 @@ pids
 node_modules
 
 #public folder
-dist
-!dist/favicons
+dist/*
+!dist/assets
 
 # Mac files
 .DS_Store
