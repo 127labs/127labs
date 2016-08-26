@@ -25,7 +25,10 @@ const config = require('hjs-webpack')({
           'og:image': '/assets/logo.png',
           'og:url': 'https://127labs.com',
           'og:site_name': '127 Labs, LLP',
-          'twitter:card': '/assets/logo.png',
+          'twitter:card': 'summary',
+          'twitter:title': 'Malaysia-based Full-Stack Software Development and UI UX Design Consultancy',
+          'twitter:description': 'Build your app while you hire your dream team. We excel in augmenting staff, delivering elegant code, and seamlessly handing off to you for rapid iteration.',
+          'twitter:image': '/assets/logo.png',
           'twitter:site': '@127labs'
         }
       })
