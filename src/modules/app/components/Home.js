@@ -25,7 +25,7 @@ function Home () {
           <h3>EMPOWER</h3>
         </figure>
       </section>
-      <section className='section marketing-section flex flex--col-2'>
+      <section className='section marketing-section marketing-section--flipped-xs flex flex--col-2'>
         <div className='marketing-section__blurb blurb'>
           <h3 className='blurb__title'>
             ALWAYS BE TESTING
@@ -39,7 +39,7 @@ function Home () {
         </div>
         <img src={require('assets/images/always-test.svg')} alt='Always Be Testing' className='marketing-section__image' />
       </section>
-      <section className='section marketing-section marketing-section--flipped-xs flex flex--col-2'>
+      <section className='section marketing-section flex flex--col-2'>
         <div>
           <img src={require('assets/images/trinity.png')} alt='Always Be Testing' className='marketing-section__image' />
         </div>
