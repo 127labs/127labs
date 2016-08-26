@@ -47,7 +47,7 @@ function Home () {
             We are heavy on tests, anything we build must pass through a suite of automated and manual tests.
           </p>
           <p className='blurb__description'>
-            This helps us to focue on new features (instead of bugs) and gives you the confidence to evolve and adapt.
+            This helps us to focus on new features (instead of bugs) and gives you the confidence to evolve and adapt.
           </p>
           <p className='blurb__description'>
             Through this practice, the products we craft are always reliable and flexible.
