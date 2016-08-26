@@ -18,15 +18,15 @@ const config = require('hjs-webpack')({
                <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Roboto:300,400" rel="stylesheet">
                <meta name="theme-color" content="#ffffff">
               `,
-        title: 'Malaysia-based Full-Stack Software Development and UI UX Design Consultancy',
+        title: 'KL-based Full-Stack Software Development and UI UX Design Consultancy',
         metaTags: {
-          'og:title': 'Malaysia-based Full-Stack Elixir Software Development and UI UX Design Consultancy',
+          'og:title': 'KL-based Full-Stack Elixir Software Development and UI UX Design Consultancy',
           'og:description': 'Build your app while you hire your dream team. We excel in augmenting staff, delivering elegant code, and seamlessly handing off to you for rapid iteration.',
           'og:image': '/assets/logo.png',
           'og:url': 'https://127labs.com',
           'og:site_name': '127 Labs, LLP',
           'twitter:card': 'summary',
-          'twitter:title': 'Malaysia-based Full-Stack Software Development and UI UX Design Consultancy',
+          'twitter:title': 'KL-based Full-Stack Software Development and UI UX Design Consultancy',
           'twitter:description': 'Build your app while you hire your dream team. We excel in augmenting staff, delivering elegant code, and seamlessly handing off to you for rapid iteration.',
           'twitter:image': '/assets/logo.png',
           'twitter:site': '@127labs'
