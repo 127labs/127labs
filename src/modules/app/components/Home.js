@@ -30,7 +30,7 @@ function Home () {
             We engage directly with your users, and prototype on paper and whiteboards, to quickly test our hypotheses.
           </p>
           <p className='blurb__description'>
-            Our aim is for every decision we make to be validated. Usability testing is done weekly, to rapidly evaluate and assess features and functions, ensuring that your product is always on the right track.
+            Our goal is for every decision we make to be validated. Usability testing is of utmost important and is done weekly, to rapidly evaluate and assess features and functions, ensuring that your product is always on the right track.
           </p>
         </div>
         <img src={require('assets/images/always-test.svg')} alt='Always Be Testing' className='marketing-section__image' />
@@ -44,13 +44,13 @@ function Home () {
             RED. GREEN. REFACTOR
           </h3>
           <p className='blurb__description'>
-            Everything we build passes a suite of automated and manual tests.
+            We are heavy on tests, anything we build must pass through a suite of automated and manual tests.
           </p>
           <p className='blurb__description'>
-            This allows us to focus on new features (instead of bugs) and gives you the confidence to evolve and adapt.
+            This helps us to focue on new features (instead of bugs) and gives you the confidence to evolve and adapt.
           </p>
           <p className='blurb__description'>
-            Through test-driven development, the products we build are always reliable and flexible.
+            Through this practice, the products we craft are always reliable and flexible.
           </p>
         </div>
       </section>
