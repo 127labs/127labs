@@ -27,7 +27,7 @@ function Home () {
             ALWAYS BE TESTING
           </h3>
           <p className='blurb__description'>
-            We spend time directly with your users, and prototype on paper and whiteboards, to quickly test our hypotheses.
+            We engage directly with your users, and prototype on paper and whiteboards, to quickly test our hypotheses.
           </p>
           <p className='blurb__description'>
             Our aim is for every decision we make to be validated. Usability testing is done weekly, to rapidly evaluate and assess features and functions, ensuring that your product is always on the right track.
