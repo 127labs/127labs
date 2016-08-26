@@ -1,13 +1,8 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
 
 function Home () {
   return (
     <div className='home'>
-      <Header>
-        <h1>Our Best Practices At Your Disposal</h1>
-      </Header>
       <section className='marketing-blocks section flex flex--col-4'>
         <figure className='marketing-block'>
           <div className='marketing-block__image marketing-block__image--research' style={{backgroundImage: `url(${require('assets/images/research.svg')}`}} />
@@ -79,9 +74,6 @@ function Home () {
         </div>
         <div className='slant slant--full slant--full-dark' />
       </section>
-      <Footer>
-        <a href='#' className='btn btn--outline-light text--uppercase'>Send Us An Inquiry</a>
-      </Footer>
     </div>
   )
 }
