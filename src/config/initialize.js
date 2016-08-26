@@ -8,13 +8,17 @@ export default (Component) =>
     const store = configureStore({})
     const history = syncHistoryWithStore(browserHistory, store)
 
+    history.listen(function (location) {
+      window.ga('send', 'pageview', location.pathname)
+      if (process.env.NODE_ENV !== 'production') {
+        console.log('[GA] Sent Page View', location.pathname)
+      }
+    })
+
     return (
       <Component
         store={store}
         history={history}
-        sendToAnalytics={() => {
-          window.ga('send', 'pageview', window.location.pathname)
-        }}
       />
     )
   }

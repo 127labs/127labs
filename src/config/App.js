@@ -4,10 +4,10 @@ import routes from 'routes'
 import initialize from './initialize'
 import Providers from './Providers'
 
-function App ({ store, history, sendToAnalytics }) {
+function App ({ store, history }) {
   return (
     <Providers store={store}>
-      <Router history={history} routes={routes} onUpdate={sendToAnalytics} />
+      <Router history={history} routes={routes} />
     </Providers>
   )
 }
