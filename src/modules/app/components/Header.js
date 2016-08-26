@@ -104,8 +104,8 @@ class Header extends React.Component {
           { this.props.children }
         </div>
         <img src={require('assets/images/caret-down.svg')} alt='Caret Down' className='header__caret-down' />
-        <div className='slant slant--bottom-left' />
-        <div className='slant slant--bottom-right' />
+        <div className='slant slant--left' />
+        <div className='slant slant--right' />
       </header>
     )
   }

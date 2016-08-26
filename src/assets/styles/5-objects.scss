@@ -30,6 +30,20 @@
   text-transform: uppercase;
 }
 
+[class*="flex--col-"] {
+  flex-direction: column;
+
+  > * {
+    &:not(:first-child) {
+      margin-top: 4rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
 .flex {
   display: flex;
 
@@ -52,16 +66,10 @@
   &--jc-space-around {
     justify-content: space-around;
   }
-}
 
-[class*="flex--col-"] {
-  flex-direction: column;
-}
-
-@media (min-width: $screen-sm) {
-  .flex {
+  @media (min-width: $screen-sm) {
     &--col-4 {
-      @include flex-columns(4, 1.5);
+      @include flex-columns(4, 4);
     }
 
     &--col-2 {
@@ -71,13 +79,30 @@
 }
 
 .marketing-blocks {
-  margin-top: 9rem
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .marketing-section {
-  margin-top: 12rem;
-  margin-bottom: 12rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   position: relative;
+
+  &--flipped-xs {
+    @media (max-width: $screen-xs) {
+      flex-direction: column-reverse;
+
+      > * {
+        &:first-child {
+          margin-top: 4rem;
+        }
+
+        &:last-child {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
 
   &__image {
     max-width: 100%;
@@ -89,8 +114,8 @@
   background-color: $purple-darkest;
   color: $white;
   position: relative;
-  padding-top: 13rem;
-  padding-bottom: 13rem;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
 
   &__iphone {
     max-width: 100%;

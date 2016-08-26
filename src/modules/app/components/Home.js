@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from './Header'
-import MarketingBlocks from './MarketingBlocks'
 
 function Home () {
   return (
@@ -8,7 +7,24 @@ function Home () {
       <Header>
         <h1>Our Best Practices At Your Disposal</h1>
       </Header>
-      <MarketingBlocks />
+      <section className='marketing-blocks section flex flex--col-4'>
+        <figure className='marketing-block'>
+          <div className='marketing-block__image marketing-block__image--research' style={{backgroundImage: `url(${require('assets/images/research.svg')}`}} />
+          <h3>RESEARCH</h3>
+        </figure>
+        <figure className='marketing-block'>
+          <div className='marketing-block__image' style={{backgroundImage: `url(${require('assets/images/create.svg')}`}} />
+          <h3>CREATE</h3>
+        </figure>
+        <figure className='marketing-block'>
+          <div className='marketing-block__image' style={{backgroundImage: `url(${require('assets/images/manage.svg')}`}} />
+          <h3>MANAGE</h3>
+        </figure>
+        <figure className='marketing-block'>
+          <div className='marketing-block__image' style={{backgroundImage: `url(${require('assets/images/empower.svg')}`}} />
+          <h3>EMPOWER</h3>
+        </figure>
+      </section>
       <section className='section marketing-section flex flex--col-2'>
         <div className='marketing-section__blurb blurb'>
           <h3 className='blurb__title'>
@@ -23,7 +39,7 @@ function Home () {
         </div>
         <img src={require('assets/images/always-test.svg')} alt='Always Be Testing' className='marketing-section__image' />
       </section>
-      <section className='section marketing-section flex flex--col-2'>
+      <section className='section marketing-section marketing-section--flipped-xs flex flex--col-2'>
         <div>
           <img src={require('assets/images/trinity.png')} alt='Always Be Testing' className='marketing-section__image' />
         </div>
@@ -43,8 +59,7 @@ function Home () {
         </div>
       </section>
       <section className='build-with-us-section'>
-        <div className='slant slant--top-left' />
-        <div className='slant slant--top-right' />
+        <div className='slant slant--full-top' />
         <div className='section flex flex--col-2 flex--jc-center flex--ai-center'>
           <div>
             <img src={require('assets/images/iphone.png')} alt='Always Be Testing' className='build-with-us-section__iphone hidden--sm' />
@@ -61,8 +76,7 @@ function Home () {
             </div>
           </div>
         </div>
-        <div className='slant slant--bottom-left' />
-        <div className='slant slant--bottom-right' />
+        <div className='slant slant--full slant--full-dark' />
       </section>
     </div>
   )
